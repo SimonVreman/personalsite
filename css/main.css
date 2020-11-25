@@ -319,6 +319,10 @@ nav a {
     background-image: url(../img/icon/youtube.svg);
 } 
 
+#section-socials .buttons > div:nth-child(3) span {
+    background-image: url(../img/icon/github.svg);
+} 
+
 #section-socials .buttons > div:last-child span {
     background-image: url(../img/icon/globe.svg);
 } 
