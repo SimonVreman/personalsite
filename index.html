@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="main.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/main.css">
+    <title>Simon Vreman</title>
+</head>
+<body>
+    <header>
+        <nav id="navbar" class="blue">
+            <a href="#section-welcome">Hey I'm Simon</a>
+            <a href="#section-intro">About me</a>
+            <a href="#section-projects">Projects</a>
+            <a href="#section-socials">Socials</a>
+        </nav>
+        <nav id="navbar-mobile" class="blue">
+            <div onclick="clickedNav()">
+                <span></span>
+            </div>
+            <div id="nav-content">
+                <a href="#section-welcome">Home</a>
+                <a href="#section-intro">About me</a>
+                <a href="#section-projects">Projects</a>
+                <a href="#section-socials">Socials</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="section-welcome">
+            <div>
+                <p>Hey! I'm Simon.</p>
+                <p>And this is my website. <strong>Disclaimer: not finished.</strong></p>
+            </div>
+            <span></span>
+        </section>
+        <section id="section-intro">
+            <div>
+                <h1>About me</h1>
+                <p>
+                    I guess the entire page is about me but who cares. 
+                    I'm a computer science student from the Netherlands,
+                    who needs a website for 'flex' purposes. In here you'll
+                    find some of my projects and other fun stuff. Hope you
+                    enjoy the read!
+                </p>
+            </div>
+            <span></span>
+        </section>
+        <section id="section-projects">
+            <div>
+                <h1>Projects</h1>
+                <p>
+                    Over the years I've completed several projects, one more
+                    impressing than the other. Unfortunately most of them are in
+                    Dutch rather than English due to school guidelines.
+                </p>
+                <button href="#">Go to projects</button>
+            </div>
+            <span></span>
+        </section>
+        <section id="section-socials">
+            <div>
+                <h1>Socials</h1>
+                <p>
+                    Not really active on them anymore, maybe one day again.
+                    Still a lot of cool gaming content on there so I'll link them
+                    here if you're interested.
+                </p>
+                <div class="buttons">
+                    <div><button onclick="window.location.href = 'https://instagram.com/kaas_fietsen';">
+                        <span></span><p>@kaas_fietsen</p>
+                    </button></div>
+                    <div><button onclick="window.location.href = 'https://www.youtube.com/channel/UCtX8afFzWhyjP-3jW4LI6jA';">
+                        <span></span><p>kaasfiets</p>
+                    </button></div>
+                    <div><button onclick="window.location.href = 'https://kaasfiets.nl';">
+                        <span></span><p>kaasfiets.nl</p>
+                    </button></div>
+                </div>
+            </div>
+            <span></span>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
