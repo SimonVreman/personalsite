@@ -57,6 +57,38 @@ p {
     font-size: 20px;
 }
 
+a {
+    font-size: 20px;
+    text-decoration: none;
+    color: #C23E31;
+    position: relative;
+    transition: color .5s ease;
+}
+
+a > span:first-child {
+    position: relative;
+    z-index: 2;
+}
+
+a:hover {
+    color: #f7d1ce;
+}
+
+a .underline-link {
+    position: absolute;
+    background-color: #C23E31;
+    height: 10%;
+    width: 100%;
+    bottom: 0px;
+    left: 0px;
+    z-index: 1;
+    animation: linkunhover .5s forwards;
+}
+
+a:hover > .underline-link {
+    animation: linkhover .5s forwards;
+}
+
 button {
     padding: 10px 0px;
     width: 100%;
@@ -152,6 +184,7 @@ nav a {
 
 #section-welcome div {
     color: #1A43B4;
+    padding: 15px;
 }
 
 #section-welcome > div > * {
@@ -159,7 +192,7 @@ nav a {
 }
 
 #section-welcome p:first-child {
-    font-size: 50px;
+    font-size: 48px;
 }
 
 #section-welcome p:last-child {
@@ -230,7 +263,7 @@ nav a {
     margin: 5px 0px;
 }
 
-#section-projects span {
+#section-projects > span {
     position: absolute;
     background-color: #f7d1ce;
     background-image: url(../img/thirdbg.svg);
@@ -240,6 +273,20 @@ nav a {
     background-repeat: no-repeat;
     background-position: center top;
     z-index: -1;
+}
+
+#section-projects > ul {
+    width: 100%;
+}
+
+#section-projects .project-holder {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+#section-projects .project-holder button {
+    width: 50%;
 }
 
 /* socials */
@@ -345,6 +392,19 @@ nav a {
     }
 }
 
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    background-color: #CB6A37;
+}
+
+footer p {
+    font-size: 15px;
+    color: #f8cdb6;
+}
+
 @media (min-width:768px) {
     #section-intro > span, #section-projects > span, #section-socials > span {
         background-size: 100% 100%;
@@ -395,4 +455,46 @@ nav a {
         display: none;
         top: -200px;
     }
+}
+
+@keyframes linkhover {
+    0% {
+        width: 100%;
+    }
+
+    35% {
+        width: 10%;
+        height: 10%;
+    }
+
+    65% {
+        width: 10%;
+        height: 100%;
+    }
+
+    100% {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@keyframes linkunhover {
+    0% {
+        width: 100%;
+        height: 100%;
+    }
+
+    35% {
+        width: 10%;
+        height: 100%;
+    }
+
+    65% {
+        width: 10%;
+        height: 10%;
+    }
+    
+    100% {
+        width: 100%;
+    } 
 }
