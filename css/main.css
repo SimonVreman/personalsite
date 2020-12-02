@@ -6,22 +6,6 @@
     #d4e5fd
 */
 
-.blue {
-    color: #1A43B4;
-}
-
-.green {
-    color: #32A32F;
-}
-
-.red {
-    color: #C23E31;
-}
-
-.orange {
-    color: #CB6A37;
-}
-
 .fadein {
     animation: navbaropen .5s ease forwards;
 }
@@ -402,6 +386,38 @@ footer {
 
 footer p {
     font-size: 15px;
+    color: #f8cdb6;
+}
+
+.blue {
+    color: #1A43B4;
+}
+
+.blue a:hover {
+    color: #e2e9fd;
+}
+
+.green {
+    color: #32A32F;
+}
+
+.green a:hover {
+    color: #c8f9c7;
+}
+
+.red {
+    color: #C23E31;
+}
+
+.red a:hover {
+    color: #f7d1ce;
+}
+
+.orange {
+    color: #CB6A37;
+}
+
+.orange a:hover {
     color: #f8cdb6;
 }
 
