@@ -137,7 +137,7 @@ a:hover {
     top: 0;
     left: 0;
     z-index: -1;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     display: flex;
     flex-flow: row nowrap;
@@ -159,7 +159,7 @@ a:hover {
         margin: 0px 60px;
     }
 
-    .project-square, .jobbox, .edu {
+    .project-square, .job, .edu {
         width: calc(50% - 10px);
     }
 }
