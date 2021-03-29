@@ -110,13 +110,13 @@ a:hover {
     width: calc(100% - 12px);
 }
 
-.edu > h3 {
+.edu > h3, .job > h3 {
     font-weight: 300;
     text-align: center;
     margin: 10px 0px;
 }
 
-.edu > p {
+.edu > p, .job > p {
     margin: 10px 0px;
 }
 
