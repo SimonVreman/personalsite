@@ -79,6 +79,7 @@ a:hover {
     width: 100%;
     display: flex;
     flex-flow: row wrap;
+    text-align: center;
 }
 
 .project-square {
